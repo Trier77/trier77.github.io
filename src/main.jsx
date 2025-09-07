@@ -5,7 +5,7 @@ import "./main.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "trier77.github.io"}>
       <App />
     </BrowserRouter>
   </StrictMode>
