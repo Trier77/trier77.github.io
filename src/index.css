@@ -19,6 +19,46 @@ body {
   text-align: center;
 }
 
+.frame {
+  position: fixed;       /* så de altid følger viewporten, ikke scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;         /* dækker hele skærmhøjden */
+  display: flex;
+  justify-content: center; /* placér i midten horisontalt */
+  align-items: center;     /* placér i midten lodret */
+  pointer-events: none;  /* så de ikke blokerer klik på andre elementer */
+  z-index: 0;            /* baggrund, andre ting kan komme ovenpå */
+}
+
+.frame-lines {
+  display: flex;
+  flex-direction: row;   /* en linje over den anden */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.line{
+  
+}
+
+.line img {
+  height: 90vh;         /* skalerer linien til næsten hele skærmhøjden */
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;         /* valgfrit: gør den lidt transparent */
+}
+.left {
+transform: rotateZ(25deg);
+
+}
+
+.right {
+transform: rotateZ(-25deg);
+}
+
  .banner{ 
   width: 100%;
   height: 100vh;
@@ -41,8 +81,8 @@ body {
 
 .banner .slider{
     position: absolute;
-    width: 200px;
-    height: 250px;
+    width: 10rem;
+    height: 10rem;
     top: 10%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
@@ -65,7 +105,7 @@ body {
     inset: 0 0 0 0;
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--bill-antal)) * 1deg))
-        translateZ(550px);
+        translateZ(25rem);
         border: orange solid 2px; 
         border-radius: 50%;
         background: radial-gradient(circle at top left, rgba(255,255,255,1), transparent);
@@ -162,7 +202,9 @@ body {
 
 .bund-menu{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
 }
 
@@ -179,4 +221,32 @@ body {
     background: linear-gradient(0deg, #072038, #000)  ;
     box-shadow: 2px 10px 4px 2px rgb(255 255 255 / 100%);
     transform: rotateX(50deg) rotateY(0deg);
+}
+
+.btn-kasse{
+border-top: solid #fff 1rem;
+width: 80%;
+border-radius: 40% 40% 0 0;
+display: flex;
+justify-content: center;
+/* background-color: #fff; */
+}
+
+.bund-knap{
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(20px);
+  font-size: 2rem;
+}
+.bund-knap img{
+  width: 80%;
+  height: 80%;
+  
+}
+
+.info-kasse{
+
 }

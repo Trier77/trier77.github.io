@@ -1,7 +1,15 @@
 export default function Home(){
     return(
         <>
-        <h1>You are at Home</h1>
+        
+        <article className="frame">
+            <section className="frame-lines">
+                <div className="line left"><img src="/img/icons/thin_line.svg" alt="linie" /></div>
+                <div className="line right"><img src="/img/icons/thin_line.svg" alt="linie" /></div>
+            </section>
+            
+        </article>
+        
         <div className="banner">
             <div className="sliderWrapper">
                 <div className="slider" style={{"--bill-antal": 12}}>
@@ -21,7 +29,7 @@ export default function Home(){
                 </div>
             </div>
             
-            <article className="indmad">
+            {/* <article className="indmad">
                 <h2 data-content="Whalla habibi">Whalla habibi</h2>
                 <section className="author">
                     <h3>Jacob Trier</h3>
@@ -31,7 +39,7 @@ export default function Home(){
                 
                 
                 {/* <div className="model"></div> */}
-            </article>
+            {/*</div></article> */}
             
             
         </div>
@@ -40,6 +48,14 @@ export default function Home(){
                     <div className="box"></div>
                     <div className="box"></div>
                     <div className="box"></div>
+                </section>
+                <section className="btn-kasse">
+                    <button className="bund-knap"><img src="/img/icons/white_progra.svg" alt="VFX & Motion Graphics" /></button>
+                    <button className="bund-knap"><img src="/img/icons/white_magic_wand.svg" alt="VFX & Motion Graphics" /></button>
+                    <button className="bund-knap"><img src="/img/icons/white_vcamera.svg" alt="VFX & Motion Graphics" /></button>
+                </section>
+                <section className="info-kasse">
+                        <p></p>
                 </section>
                 
             </article>
