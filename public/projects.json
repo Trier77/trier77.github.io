@@ -1,9 +1,20 @@
-{
+[{
   "id": 1,
-  "title": "Portfolio Website",
+  "title": "Moderkagens Mission",
   "year": 2025,
-  "description": "Mit portfolio bygget med React.",
+  "description": "Et læringsspil omkring moderkagen i forbindelse med Steeno Museets lancering af deres udstilling Den Oversete Krop. Lavet med HTML, CSS og Javascript",
+  "tags": ["React", "Portfolio", "Frontend"],
+  "image": "/img/portfolio.webp",
+  "links": [{"url": "https://moderkagens-mission-2.0.jvalbjorn.dk/", "text": "Moderkagens Mission"}]
+},
+
+{
+  "id": 2,
+  "title": "Spillerkort",
+  "year": 2025,
+  "description": "Spillerkortsanimationer lavet i Davinci Resolve.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
   "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
 }
+]
