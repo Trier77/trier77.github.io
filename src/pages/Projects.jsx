@@ -16,13 +16,30 @@ export default function Projects(){
 //    console.log(data);
   
     return(
-    <section id="clients">
-      <div className="headline-container">
-        <h2>You are at Project</h2>
-      </div>
-      {/* {projs.map(projs => (
-        <ClientRow client={client} key={client.id} />
-      ))} */}
+      <>
+        <section className="project-roster">
+      {projs.map((proj) => (
+        <img
+          key={proj.id}
+          src={proj.image}
+          alt={proj.title}
+          title={proj.title}
+        />
+      ))}
     </section>
+
+    {/* <section className="project-roster">
+        <img src="/img/thumbnails/can_it.jpg" alt="" />
+        <img src="/img/thumbnails/coil.jpg" alt="" />
+        <img src="/img/thumbnails/dff.jpg" alt="" />
+        <img src="/img/thumbnails/freder.jpg" alt="" />
+        <img src="/img/thumbnails/lucifer.jpg" alt="" />
+        <img src="/img/thumbnails/moderkage.jpg" alt="" />
+        <img src="/img/thumbnails/revy.jpg" alt="" />
+        <img src="/img/thumbnails/can_it.jpg" alt="" />
+
+    </section> */}
+      </>
+   
     );
 }

@@ -38,10 +38,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  gap: 2rem;
 }
 
-.line{
-  
+.left + .right{
+  margin-left: -30rem;
 }
 
 .line img {
@@ -200,7 +201,7 @@ transform: rotateZ(-25deg);
   z-index: 3; /* stadig foran baggrund, men 3D-styret */
 /*} */
 
-.bund-menu{
+/* .bund-menu{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -230,7 +231,7 @@ border-radius: 40% 40% 0 0;
 display: flex;
 justify-content: center;
 /* background-color: #fff; */
-}
+/* }
 
 .bund-knap{
   width: 100px;
@@ -249,4 +250,18 @@ justify-content: center;
 
 .info-kasse{
 
+} */
+
+
+ .project-roster{
+  columns: 300px;
 }
+
+.project-roster img{
+  width: 100%;
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  border-radius: 0.5rem;
+  border: rgba(200, 235, 255, 0.75) solid 0.2rem;
+  box-shadow: 0px -6px 6px 2px rgb(255 255 255 / 50%);
+
+} 

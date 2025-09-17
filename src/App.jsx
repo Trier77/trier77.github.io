@@ -6,12 +6,15 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import ProjectDetail from "./pages/ProjectDetail";
+import Top from "./components/Top";
 
 function App() {
   return (
     <main>
       <Header />
   <Navigation />
+  <Top />
+  
   <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
