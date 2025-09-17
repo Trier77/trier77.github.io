@@ -1,16 +1,18 @@
 export default function Top(){
     return(
         <>
+        
+
         <article className="me-boxes">
             <section className="left-boxes">
-                <div className="navn-box"></div>
-                <div className="cv-box"></div>
-                <div className="email-box"></div>
+                <div className="left-sect navn-box"><h2>Hejsa! <br />Mit navn er <br />Jacob Trier</h2></div>
+                <div className="left-sect cv-box"><h3>Du kan tage et kig på mit CV</h3><button>Mit CV</button></div>
+                <div className="left-sect email-box"><h3>Vil du gerne i kontakt med mig?</h3><h4>Tryk her for at kopiere min mail adresse</h4><button>Min mail</button></div>
 
             </section>
             
             <section className="right-boxes">
-                <div className="banner">
+                <div className="right-sect banner">
         
                     <div className="sliderWrapper">
                         <div className="slider" style={{"--bill-antal": 12}}>
@@ -30,9 +32,15 @@ export default function Top(){
                     </div>            
         
                 </div>
-                <div className="model">billede af mig</div>
+                <div className="model-ramme">
+                    <div className="model"></div>
+                </div>
+                
 
-                <div className="tools"></div>
+                <div className=" right-sect tools">
+                    <h3>Værktøj</h3>
+                    <p>Jeg har erfaring med masser Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus labore odit rerum neque obcaecati omnis assumenda quaerat nisi! Repellat assumenda placeat iure laudantium in! Reprehenderit saepe excepturi nostrum modi dolorem?</p>
+                </div>
             </section>
         </article>
         </>

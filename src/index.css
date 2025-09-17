@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Brown-Regular', Arial, sans-serif;
-  background: var(--bg-colour)  ;
+  /* background: var(--bg-colour); */
   margin: 0;
   padding: 0;
 }
@@ -19,46 +19,133 @@ body {
   text-align: center;
 }
 
-.frame {
-  position: fixed;       /* så de altid følger viewporten, ikke scroll */
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {    
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+    @-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container{
+  position: fixed;
   top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+}
+
+.stars {
+ background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+ position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;         /* dækker hele skærmhøjden */
-  display: flex;
-  justify-content: center; /* placér i midten horisontalt */
-  align-items: center;     /* placér i midten lodret */
-  pointer-events: none;  /* så de ikke blokerer klik på andre elementer */
-  z-index: 0;            /* baggrund, andre ting kan komme ovenpå */
+  right: 0;
+  display: block;
+    z-index: 0;
 }
 
-.frame-lines {
-  display: flex;
-  flex-direction: row;   /* en linje over den anden */
-  justify-content: center;
-  align-items: center;
+.twinkling{
+  width:10000px;
   height: 100%;
-  gap: 2rem;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+  background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+  
 }
 
-.left + .right{
-  margin-left: -30rem;
+.clouds{
+  width:10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+  background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+.background-container img{
+  height: 70vh;
+  width:70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
 }
 
-.line img {
-  height: 90vh;         /* skalerer linien til næsten hele skærmhøjden */
-  width: auto;
-  object-fit: contain;
-  opacity: 0.8;         /* valgfrit: gør den lidt transparent */
-}
-.left {
-transform: rotateZ(25deg);
+.me-boxes{
+  position: relative;
+top: 0;
+left: 0;
+border: solid #fff;
+color: #fff;
+display: grid;
+grid-template-columns: 1fr 2fr; /* 1 del venstre, 2 dele højre */
+gap: 1rem;
+z-index: 5;
 
 }
 
-.right {
-transform: rotateZ(-25deg);
+.left-boxes{
+border: solid #fff;
 }
+
+.left-sect{
+  border: solid #fff;
+}
+
+.right-boxes{
+border: solid #fff;
+}
+
+.right-sect{
+  border: solid #fff;
+}
+
 
  .banner{ 
   width: 100%;
@@ -82,8 +169,8 @@ transform: rotateZ(-25deg);
 
 .banner .slider{
     position: absolute;
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     top: 10%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
@@ -106,7 +193,7 @@ transform: rotateZ(-25deg);
     inset: 0 0 0 0;
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--bill-antal)) * 1deg))
-        translateZ(25rem);
+        translateZ(10rem);
         border: orange solid 2px; 
         border-radius: 50%;
         background: radial-gradient(circle at top left, rgba(255,255,255,1), transparent);
@@ -173,17 +260,26 @@ transform: rotateZ(-25deg);
     font-size: 3em;
 }
 
-.banner .indmad .model{
+.model-ramme{
+  position: absolute;
+    top: 10vh;
+    left: 70%;
+  height: 20%;
+  width: 20%;
+  border: #fff solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+ .model{
     background-image: url(/public/img/model.png);
     width: 100%;
-    height: 75vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    height: 100%;
+    
     background-size: auto 130%;
     background-repeat: no-repeat;
     background-position: top center;
-    z-index: 1;
+    z-index: 5;
 }
 
 
@@ -201,59 +297,11 @@ transform: rotateZ(-25deg);
   z-index: 3; /* stadig foran baggrund, men 3D-styret */
 /*} */
 
-/* .bund-menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-}
-
-.fliser{
-  display: flex;
-}
-
-.box {
-    border: solid rgb(255 255 255) 2px;
-    border-radius: 20%;
-    width: 200px;
-    height: 200px;
-    margin: 1rem;
-    background: linear-gradient(0deg, #072038, #000)  ;
-    box-shadow: 2px 10px 4px 2px rgb(255 255 255 / 100%);
-    transform: rotateX(50deg) rotateY(0deg);
-}
-
-.btn-kasse{
-border-top: solid #fff 1rem;
-width: 80%;
-border-radius: 40% 40% 0 0;
-display: flex;
-justify-content: center;
-/* background-color: #fff; */
-/* }
-
-.bund-knap{
-  width: 100px;
-  height: 100px;
-  margin: 1rem;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.5);
-  backdrop-filter: blur(20px);
-  font-size: 2rem;
-}
-.bund-knap img{
-  width: 80%;
-  height: 80%;
-  
-}
-
-.info-kasse{
-
-} */
 
 
  .project-roster{
+  position: relative;
   columns: 300px;
 }
 

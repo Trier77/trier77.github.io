@@ -7,12 +7,15 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import ProjectDetail from "./pages/ProjectDetail";
 import Top from "./components/Top";
+import Background from "./components/Background";
 
 function App() {
   return (
     <main>
+      
       <Header />
   <Navigation />
+  <Background />
   <Top />
   
   <Routes>
