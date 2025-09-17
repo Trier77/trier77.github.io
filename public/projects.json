@@ -14,7 +14,7 @@
   "year": 2024,
   "description": "Spillerkortsanimationer lavet for Skive Volleyballklub.",
   "tags": ["Affinity Designer", "Davinci","Audacity"],
-  "image": "/img/thumbnails/freder.jpg",
+  "image": "img/thumbnails/freder.jpg",
   "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
 },
 
@@ -24,7 +24,7 @@
   "year": 2025,
   "description": "Et wordle inspireret kombinationslås. Spillerne skal løse opgaver, der hver især giver et tal, som til sidst skal tastes ind for at disarmere en bombe.",
   "tags": ["HTML", "CSS", "Javascript"],
-  "image": "/img/thumbnails/coil.jpg",
+  "image": "img/thumbnails/coil.jpg",
   "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
 },
 
@@ -34,7 +34,7 @@
   "year": 2023,
   "description": "VFX glasstykker der viser hvem Lucifer er under sin forklædning.",
   "tags": ["Blender", "Davinci Resolve"],
-  "image": "/img/thumbnails/lucifer.jpg",
+  "image": "img/thumbnails/lucifer.jpg",
   "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
 },
 
@@ -44,7 +44,7 @@
   "year": 2023,
   "description": "Promotionsvideo for Ingeniørrevyen Aarhus.",
   "tags": ["Premiere Pro"],
-  "image": "/img/thumbnails/revy.jpg",
+  "image": "img/thumbnails/revy.jpg",
   "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
 },
 
@@ -54,7 +54,7 @@
   "year": 2023,
   "description": "Kort animationsvideo til Production Crates månedlige konkurrence med temaet: Western",
   "tags": ["Unreal Engine", "Premiere Pro", "Reaper"],
-  "image": "/img/thumbnails/can_it.jpg",
+  "image": "img/thumbnails/can_it.jpg",
   "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
 },
 
