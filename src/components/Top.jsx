@@ -1,3 +1,5 @@
+import CopyEmailButton from "./CopyEmailButton"
+import {Link} from "react-router-dom";
 export default function Top(){
     return(
         <>
@@ -5,9 +7,20 @@ export default function Top(){
 
         <article className="me-boxes">
             <section className="left-boxes">
-                <div className="left-sect navn-box"><h2>Hejsa! <br />Mit navn er <br />Jacob Trier</h2></div>
-                <div className="left-sect cv-box"><h3>Du kan tage et kig på mit CV</h3><button>Mit CV</button></div>
-                <div className="left-sect email-box"><h3>Vil du gerne i kontakt med mig?</h3><h4>Tryk her for at kopiere min mail adresse</h4><button>Min mail</button></div>
+                <div className="left-sect navn-box">
+                    <Link to="/about"><h2>Hejsa! <br />Mit navn er <br />Jacob Trier</h2></Link>
+                </div>
+                
+                <div className="left-sect cv-box">
+                    <h3>Du kan tage et kig på mit CV</h3>
+                    <a href="/mit_cv.pdf" target="_blank" rel="noopener noreferrer" className='animation active '> Mit CV </a>
+                </div>
+                    
+                <div className="left-sect email-box">
+                    <h3>Vil du gerne i kontakt med mig?</h3>
+                    <h4>Tryk her for at kopiere min mail adresse</h4>
+                    <CopyEmailButton />
+                </div>
 
             </section>
             
@@ -33,7 +46,7 @@ export default function Top(){
         
                 </div>
                 <div className="model-ramme">
-                    <div className="model"></div>
+                    <Link to="/about"><div className="model"></div></Link>
                 </div>
                 
 
