@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Brown-Regular', Arial, sans-serif;
-  /* background: var(--bg-colour); */
+  background: var(--bg-colour);
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-@keyframes move-background {
+/* @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
@@ -115,7 +115,7 @@ body {
   position: absolute;
   z-index: 3;
   right: 20px;
-}
+} */
 
 .me-boxes{
   position: relative;
