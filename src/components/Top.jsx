@@ -16,7 +16,7 @@ export default function Top(){
         
                     <div className="sliderWrapper">
                         <div className="slider" style={{"--bill-antal": 12}}>
-                        <div className="item" style={{ "--position": 1 }}><img src="/public/img/logos/ae.png" alt="dragon1"/></div>
+                        <div className="item" style={{ "--position": 1 }}><img src="img/logos/ae.png" alt="dragon1"/></div>
                         <div className="item" style={{ "--position": 2 }}><img src="public/img/logos/pr.png" alt="dragon2"/></div>
                         <div className="item" style={{ "--position": 3 }}><img src="public/img/logos/aff-design.png" alt="dragon3"/></div>
                         <div className="item" style={{ "--position": 4 }}><img src="public/img/logos/figma.png" alt="dragon4"/></div>
