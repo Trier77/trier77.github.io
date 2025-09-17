@@ -4,7 +4,7 @@
   "year": 2025,
   "description": "Et læringsspil omkring moderkagen i forbindelse med Steeno Museets lancering af deres udstilling Den Oversete Krop.",
   "tags": ["HTML", "CSS", "Javascript"],
-  "image": "/img/thumbnails/moderkage.jpg",
+  "image": "/public/img/thumbnails/moderkage.jpg",
   "links": [{"url": "https://moderkagens-mission-2.0.jvalbjorn.dk/", "text": "Moderkagens Mission"}]
 },
 
