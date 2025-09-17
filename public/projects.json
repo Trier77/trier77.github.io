@@ -5,7 +5,7 @@
   "description": "Et læringsspil omkring moderkagen i forbindelse med Steeno Museets lancering af deres udstilling Den Oversete Krop.",
   "tags": ["HTML", "CSS", "Javascript"],
   "image": "img/thumbnails/moderkage.jpg",
-  "links": [{"url": "https://moderkagens-mission-2.0.jvalbjorn.dk/", "text": "Moderkagens Mission"}]
+  "links": [{"url": "https://moderkagens-mission-2.0.jvalbjorn.dk/", "text": "Tjek Moderkagens Mission"}]
 },
 
 {
@@ -15,7 +15,7 @@
   "description": "Spillerkortsanimationer lavet for Skive Volleyballklub.",
   "tags": ["Affinity Designer", "Davinci","Audacity"],
   "image": "img/thumbnails/freder.jpg",
-  "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
+  "links": [{"url": "https://trier77.github.io", "text": "Tjek Skive Volley's instagram"}]
 },
 
 {
@@ -25,7 +25,7 @@
   "description": "Et wordle inspireret kombinationslås. Spillerne skal løse opgaver, der hver især giver et tal, som til sidst skal tastes ind for at disarmere en bombe.",
   "tags": ["HTML", "CSS", "Javascript"],
   "image": "img/thumbnails/coil.jpg",
-  "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
+  "links": [{"url": "https://coil.fairfiremedia.dk/", "text": "Tjek COIL projekt"}]
 },
 
 {
@@ -35,7 +35,7 @@
   "description": "VFX glasstykker der viser hvem Lucifer er under sin forklædning.",
   "tags": ["Blender", "Davinci Resolve"],
   "image": "img/thumbnails/lucifer.jpg",
-  "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
+  "links": [{"url": "https://www.youtube.com/watch?v=TgmGO840ers&ab_channel=JacobTrier", "text": "Tjek videoer af andre VFX og redigeringsprojekter på min YouTube-kanal"}]
 },
 
 {
@@ -45,7 +45,7 @@
   "description": "Promotionsvideo for Ingeniørrevyen Aarhus.",
   "tags": ["Premiere Pro"],
   "image": "img/thumbnails/revy.jpg",
-  "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
+  "links": [{"url": "https://www.youtube.com/watch?v=m11FaKZOkQ0&ab_channel=JacobTrier", "text": "Tjek videoer af andre videoprojekter på min YouTube-kanal"}]
 },
 
 {
@@ -55,7 +55,7 @@
   "description": "Kort animationsvideo til Production Crates månedlige konkurrence med temaet: Western",
   "tags": ["Unreal Engine", "Premiere Pro", "Reaper"],
   "image": "img/thumbnails/can_it.jpg",
-  "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
+  "links": [{"url": "https://www.youtube.com/watch?v=TgmGO840ers&ab_channel=JacobTrier", "text": "Tjek videoer af andre VFX og redigeringsprojekter på min YouTube-kanal"}]
 },
 
 {
@@ -64,18 +64,18 @@
   "year": 2025,
   "description": "Promotionsvideo for HEMA Danmark, en del af Dansk Fægte-Forbund (DFF).",
   "tags": ["Davinci Resolve"],
-  "image": "/img/portfolio.webp",
-  "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
+  "image": "img/thumbnails/dff.jpg",
+  "links": [{"url": "https://www.youtube.com/watch?v=m11FaKZOkQ0&ab_channel=JacobTrier", "text": "Tjek videoer af andre videoprojekter på min YouTube-kanal"}]
 },
 
 {
   "id": 8,
-  "title": "Spillerkort",
-  "year": 2025,
-  "description": "Spillerkortsanimationer lavet i Davinci Resolve.",
-  "tags": ["React", "Portfolio", "Frontend"],
+  "title": "ZeroBuzz Brew",
+  "year": 2024,
+  "description": "En salgs hjemmeside for et fiktiv brand, der sælger ikke-alkoholiske øl.",
+  "tags": ["HTML", "CSS", "Javascript"],
   "image": "/img/portfolio.webp",
-  "links": [{"url": "https://trier77.github.io", "text": "React Portfolio"}]
+  "links": [{"url": "", "text": "Hjemmesiden er desværre nede"}]
 },
 
 {

@@ -1,32 +1,49 @@
 import { useEffect, useState } from "react";
+import ProjectDetail from "./ProjectDetail";
 
+export default function Projects() {
+  const [projs, setProjs] = useState([]);
+  const [activeId, setActiveId] = useState(null);
 
-export default function Projects(){
-    const [projs, setProjs] = useState([]);
-      useEffect(() => {
+  useEffect(() => {
     async function getData() {
       const response = await fetch("/projects.json");
       const data = await response.json();
-      console.log("Fetched data:", data);
       setProjs(data);
     }
     getData();
-   
+
+    // klik udenfor => luk overlay
+    function handleClickOutside(e) {
+      if (!e.target.closest(".project-card")) {
+        setActiveId(null);
+      }
+    }
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
-//    console.log(data);
-  
-    return(
-      <>
-        <section className="project-roster">
+
+  function toggleActive(id) {
+    setActiveId(activeId === id ? null : id);
+  }
+
+  return (
+    <section className="project-roster">
       {projs.map((proj) => (
-        <img
+        <ProjectDetail
           key={proj.id}
-          src={proj.image}
-          alt={proj.title}
-          title={proj.title}
+          proj={proj}
+          isActive={activeId === proj.id}
+          onClick={() => toggleActive(proj.id)}
         />
       ))}
     </section>
+  );
+}
+
+
+
+
 
     {/* <section className="project-roster">
         <img src="/img/thumbnails/can_it.jpg" alt="" />
@@ -39,7 +56,6 @@ export default function Projects(){
         <img src="/img/thumbnails/can_it.jpg" alt="" />
 
     </section> */}
-      </>
+      
    
-    );
-}
+ 

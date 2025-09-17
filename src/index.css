@@ -300,16 +300,74 @@ border: solid #fff;
 
 
 
- .project-roster{
-  position: relative;
-  columns: 300px;
+ .project-roster {
+  columns: 300px; /* masonry-style layout */
 }
 
-.project-roster img{
+.project-card {
+  position: relative;
+  display: inline-block;
   width: 100%;
-  margin: 1rem 1.5rem 0rem 1.5rem;
+  margin: 1rem 1.5rem 0 1.5rem;
   border-radius: 0.5rem;
+  overflow: hidden;
   border: rgba(200, 235, 255, 0.75) solid 0.2rem;
   box-shadow: 0px -6px 6px 2px rgb(255 255 255 / 50%);
+  cursor: pointer;
+}
 
-} 
+.project-card img {
+  width: 100%;
+  display: block;
+  transition: filter 0.4s ease;
+}
+
+.project-card .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card .overlay ul {
+  list-style: none;     /* fjern punkttegn */
+  padding: 0;
+  margin: 0.5rem 0;
+
+  display: flex;        /* gør listen vandret */
+  gap: 0.5rem;          /* afstand mellem tags */
+  flex-wrap: wrap;      /* så de hopper ned på ny linje, hvis pladsen slipper op */
+}
+
+.project-card .overlay li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+}
+
+
+/* Hover (desktop) */
+.project-card:hover img {
+  filter: blur(6px) brightness(0.7);
+}
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Active (mobil/tablet via click) */
+.project-card.active img {
+  filter: blur(6px) brightness(0.7);
+}
+.project-card.active .overlay {
+  opacity: 1;
+}
+
