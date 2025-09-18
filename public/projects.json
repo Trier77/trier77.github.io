@@ -1,21 +1,21 @@
-[{
-  "id": 1,
-  "title": "Moderkagens Mission",
-  "year": 2025,
-  "description": "Et læringsspil omkring moderkagen i forbindelse med Steeno Museets lancering af deres udstilling Den Oversete Krop.",
-  "tags": ["HTML", "CSS", "Javascript"],
-  "video": "video/moderkage.mp4",
-  "links": [{"url": "https://moderkagens-mission-2.0.jvalbjorn.dk/", "text": "Tjek Moderkagens Mission"}]
-},
-
+[
 {
-  "id": 2,
+  "id": 1,
   "title": "Spillerkort",
   "year": 2024,
   "description": "Spillerkortsanimationer lavet for Skive Volleyballklub.",
   "tags": ["Affinity Designer", "Davinci","Audacity"],
   "video": "video/freder.mp4",
   "links": [{"url": "https://www.instagram.com/stories/skive_volley/", "text": "Tjek Skive Volley's instagram"}]
+},
+{
+  "id": 2,
+  "title": "Moderkagens Mission",
+  "year": 2025,
+  "description": "Et læringsspil omkring moderkagen i forbindelse med Steeno Museets lancering af deres udstilling Den Oversete Krop.",
+  "tags": ["HTML", "CSS", "Javascript"],
+  "video": "video/moderkage.mp4",
+  "links": [{"url": "https://moderkagens-mission-2.0.jvalbjorn.dk/", "text": "Tjek Moderkagens Mission"}]
 },
 
 {
