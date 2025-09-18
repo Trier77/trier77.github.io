@@ -8,7 +8,7 @@ export default function Top(){
         <article className="me-boxes">
             <section className="left-boxes">
                 <div className="left-sect navn-box">
-                    <h2>Hejsa! <br />Mit navn er </h2><Link to="/about"> <h1>Jacob Trier</h1></Link>
+                    <h2>Mit navn er </h2><Link to="/about#about-me"> <h1>Jacob Trier</h1></Link>
                 </div>
                 
                 <div className="left-sect cv-box">
@@ -49,7 +49,7 @@ export default function Top(){
         
                 </div>
                 <div className="model-ramme">
-                    <Link to="/about"><div className="model"></div></Link>
+                    <Link to="/about#about-me"><div className="model"></div></Link>
                 </div>
                 
 

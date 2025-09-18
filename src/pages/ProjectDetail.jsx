@@ -5,16 +5,23 @@ export default function ProjectDetail({ proj, isActive, onClick }) {
       className={`project-card ${isActive ? "active" : ""}`}
       onClick={onClick}
     >
-      <img src={proj.image} alt={proj.title} />
+      <video
+        src={proj.video}   // <-- brug "video" i din JSON
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full rounded-lg shadow-md"
+      />
 
       <div className="overlay">
-        <h3>
+        <h5>
           {proj.title} ({proj.year})
-        </h3>
+        </h5>
         <p>{proj.description}</p>
         <ul>
           {proj.tags.map((tag, i) => (
-            <ul key={i}>{tag}</ul>
+            <li key={i}>{tag}</li> // <ul> -> <li> (semantisk korrekt)
           ))}
         </ul>
         {proj.links.map((link, i) => (

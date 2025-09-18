@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProjectDetail from "./ProjectDetail";
+import {Link} from "react-router-dom";
 
 export default function Projects() {
   const [projs, setProjs] = useState([]);
@@ -28,16 +29,24 @@ export default function Projects() {
   }
 
   return (
-    <section className="project-roster">
-      {projs.map((proj) => (
-        <ProjectDetail
-          key={proj.id}
-          proj={proj}
-          isActive={activeId === proj.id}
-          onClick={() => toggleActive(proj.id)}
-        />
-      ))}
-    </section>
+          <>
+            <article className="project-kasse" id="projects">
+              <h2>Projekter</h2>
+              <section className="project-roster">
+              {projs.map((proj) => (
+              <ProjectDetail
+              key={proj.id}
+              proj={proj}
+              isActive={activeId === proj.id}
+              onClick={() => toggleActive(proj.id)} />
+              ))}
+              </section>
+
+              <Link to="/about#about-me"> <h4 className="projekt-knap">Klik her for at lære mere om mig</h4> </Link>
+            </article>
+          </>
+    
+    
   );
 }
 
