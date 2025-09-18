@@ -13,12 +13,13 @@ export default function Top(){
                 
                 <div className="left-sect cv-box">
                     <h3>Du kan tage et kig på mit CV</h3>
-                    <a href="/mit_cv.pdf" target="_blank" rel="noopener noreferrer" className='animation active '> Mit CV </a>
+                    <div className="cv-kasse">
+                        <a href="/mit_cv.pdf" target="_blank" rel="noopener noreferrer" className='animation active '> Mit CV </a> </div>
                 </div>
                     
                 <div className="left-sect email-box">
                     <h3>Vil du gerne i kontakt med mig?</h3>
-                    <h4>Tryk her for at kopiere min mail adresse</h4>
+                    
                     <CopyEmailButton />
                 </div>
 

@@ -3,14 +3,76 @@
 
 /* src/main.css */
  :root{
-  --bg-colour:linear-gradient(0deg, #072038, #000)} 
+  --prime-colour:hsl(185, 90%, 50%)} 
 
-body {
+/* body {
   font-family: 'Brown-Regular', Arial, sans-serif;
   background: var(--bg-colour);
   margin: 0;
   padding: 0;
+} */
+
+body{
+    margin: 0;
+    font-family: Poppins;
+    background-color: #010824;
+    color: #eee;
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to right, transparent 0 49px, #eee1 49px
+    ),
+    linear-gradient(
+        to bottom, transparent 0 49px, #eee1 49px
+    );
+    background-size: 50px 50px;
+    &::before{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        content: '';
+        background-image: linear-gradient(
+            to right, #D02E23, #7A43B6
+        );
+        z-index: -1;
+        top: -200px;
+        left: calc(50% - 200px);
+        border-radius: 50% 50% 0% 0%;
+        pointer-events: none;
+        filter: blur(250px);
+    }
 }
+
+h1, h2, h3, h4, a{
+  font-family: 'ICA Rubrik', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+h1{
+  font-size: 5rem;
+  
+}
+
+
+h2{
+  font-size: 5rem;
+  transition: transform 0.3s ease;
+  text-shadow:  6px 5px 12px var(--prime-colour);
+  animation: pulse-glow 2s infinite;
+  
+  
+}
+
+h3{
+  font-size: 2.5rem;
+}
+
+h4{
+  font-size: 2rem;
+}
+
+
 
 .header {
   background: #222;
@@ -19,109 +81,13 @@ body {
   text-align: center;
 }
 
-/* @keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to { 
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-@-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to { 
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
 
-@-moz-keyframes move-background {    
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to { 
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-    @-webkit-keyframes move-background {
-  from {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  to { 
-    -webkit-transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-.background-container{
-  position: fixed;
-  top: 0;
-  left:0;
-  bottom: 0;
-  right: 0;
-}
-
-.stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
- position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: block;
-    z-index: 0;
-}
-
-.twinkling{
-  width:10000px;
-  height: 100%;
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-  background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-  
-}
-
-.clouds{
-  width:10000px;
-  height: 100%;
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-  background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
-
-   -moz-animation:move-background 150s linear infinite;
-  -ms-animation:move-background 150s linear infinite;
-  -o-animation:move-background 150s linear infinite;
-  -webkit-animation:move-background 150s linear infinite;
-  animation:move-background 150s linear infinite;
-}
-.background-container img{
-  height: 70vh;
-  width:70vh;
-  position: absolute;
-  z-index: 3;
-  right: 20px;
-} */
 
 .me-boxes{
   position: relative;
 top: 0;
 left: 0;
-border: solid #fff;
+
 color: #fff;
 display: grid;
 grid-template-columns: 1fr 2fr; /* 1 del venstre, 2 dele højre */
@@ -131,18 +97,66 @@ z-index: 5;
 }
 
 .left-boxes{
-border: solid #fff;
+
+  
+  
 }
 
 .left-sect{
   border: solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.navn-box{
+  box-shadow: var(--prime-colour);
+  
+  animation: pulse-glow 2s infinite;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  transform: scale(0.75);
+  overflow: visible;
 }
 
+.cv-kasse{
+  width: 33%;
+  height: 100%;
+  background: var(--prime-colour);
+  box-shadow: var(--prime-colour);
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: transform 0.3s ease;
+  animation: pulse-glow 2s infinite;
+  display: flex;
+  justify-content: center;
+
+}
+
+.cv-kasse:hover,  h2:hover{
+  transform: scale(1.05);
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 8px 2px hsl(185, 90%, 50%);
+  }
+  50% {
+    box-shadow: 0 0 16px 6px hsl(185, 90%, 60%);
+  }
+  100% {
+    box-shadow: 0 0 8px 2px hsl(185, 90%, 50%);
+  }
+}
 .right-boxes{
-border: solid #fff;
+
 }
 
-.right-sect{
+.tools{
   border: solid #fff;
 }
 
