@@ -8,17 +8,19 @@ export default function Top(){
         <article className="me-boxes">
             <section className="left-boxes">
                 <div className="left-sect navn-box">
-                    <Link to="/about"><h2>Hejsa! <br />Mit navn er <br />Jacob Trier</h2></Link>
+                    <h2>Hejsa! <br />Mit navn er </h2><Link to="/about"> <h1>Jacob Trier</h1></Link>
                 </div>
                 
                 <div className="left-sect cv-box">
-                    <h3>Du kan tage et kig på mit CV</h3>
+                    <h2>CV</h2>
+                    <h3>Se min udannelse og erfaringer</h3>
                     <div className="cv-kasse">
                         <a href="/mit_cv.pdf" target="_blank" rel="noopener noreferrer" className='animation active '> Mit CV </a> </div>
                 </div>
                     
                 <div className="left-sect email-box">
-                    <h3>Vil du gerne i kontakt med mig?</h3>
+                    <h2>Kontakt</h2>
+                    <h3>Skal vi snakke sammen</h3>
                     
                     <CopyEmailButton />
                 </div>
@@ -52,7 +54,7 @@ export default function Top(){
                 
 
                 <div className=" right-sect tools">
-                    <h3>Værktøj</h3>
+                    <h2>Værktøj</h2>
                     <p>Jeg har erfaring med masser Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus labore odit rerum neque obcaecati omnis assumenda quaerat nisi! Repellat assumenda placeat iure laudantium in! Reprehenderit saepe excepturi nostrum modi dolorem?</p>
                 </div>
             </section>

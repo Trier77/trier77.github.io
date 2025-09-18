@@ -2,17 +2,17 @@
 
 .copy-btn {
   position: relative;
-  width: 14rem;
-  padding: 0.75rem 1rem;
+  width: fit-content;
+  padding: 0.5rem 1.2rem;
   border-radius: 9999px; /* fuldt afrundet */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
   font-family: 'ICA Rubrik';
-  color: black;
-  background: hsl(185, 90%, 50%);
-  box-shadow: 0 0 16px 4px hsl(185, 90%, 50%);
+  color: #E6EDF3;
+  background: var(--primary);
+  box-shadow: 0 0 16px 4px var(--primary);
   cursor: pointer;
-
+  border:  1px solid rgba(255,255,255,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
