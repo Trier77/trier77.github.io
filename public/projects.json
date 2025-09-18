@@ -14,7 +14,7 @@
   "year": 2025,
   "description": "Et læringsspil omkring moderkagen i forbindelse med Steeno Museets lancering af deres udstilling Den Oversete Krop.",
   "tags": ["HTML", "CSS", "Javascript"],
-  "video": "video/moderkage.mp4",
+  "video": "video/Moderkage.mp4",
   "links": [{"url": "https://moderkagens-mission-2.0.jvalbjorn.dk/", "text": "Tjek Moderkagens Mission"}]
 },
 
@@ -24,7 +24,7 @@
   "year": 2025,
   "description": "Et wordle inspireret kombinationslås. Spillerne skal løse opgaver, der hver især giver et tal, som til sidst skal tastes ind for at disarmere en bombe.",
   "tags": ["HTML", "CSS", "Javascript"],
-  "video": "video/coil.mp4",
+  "video": "video/Coil.mp4",
   "links": [{"url": "https://coil.fairfiremedia.dk/", "text": "Tjek COIL projekt"}]
 },
 
