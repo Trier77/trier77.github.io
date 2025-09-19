@@ -6,31 +6,32 @@ export default function About(){
             <div className="about-kasse" id="about-me">
                 <h2>Lidt om mig</h2>
                     <p>
-                        Personlige kompetencer
+                        Jeg har valgt at blive multimediedesigner, for der er bare noget ved at lave noget imponrende, indlevende og brugbart. Og der er så meget at tage fat i. Og jeg brænder for at gøre ting mere interessante – hvad enten det er en film, et interface, et website eller et enkelt visuelt element.</p>
 
-                        Jeg er god til kommunikation og teamwork. Jeg trives fint med at arbejde selvstændigt, men jeg fungerer allerbedst, når jeg har nogen at sparre med. Jeg er nysgerrig og tilpasningsdygtig, og jeg har mod på at prøve nye ting – især når det sker i et miljø, hvor der er plads til idéer og eksperimenter.
-                        Jeg er analytisk og tænker kritisk, hvilket betyder, at jeg sjældent er den første til at kaste mig hovedkulds ud i noget nyt. Til gengæld er jeg god til at lytte til andres perspektiver og finde værdi i forskellige synspunkter – også når jeg ikke er enig fra starten.
+                        <br /><p>
+                        Jeg har i mange år gerne villet arbejde inden for film og videoproduktion. Til at starte med arbejdede jeg kun med redigering og komposistion. Lavet små VFX-klip og få det til at se bedre ud. De senere år er jeg kommet i gang med selv at optage og producerer. Filmet sportsevents, revyer og små egne projekter. Har taget og er i gang med kurser i både Blender og Unreal Engine.
+                        </p>
+                        
+                        
+                        <br /><p>
+                        Jeg synes også at det er imponerende hvordan nogen kun med stemmen kan fortælle eller blive til en karakter at historie og oplevelser bliver helt unikke. Jeg er nu selv blevet til en stemmelægger. Omend jeg stadig er amatør inden for det felt, så ved jeg, hvor vigtigt det er, at have den rette stemme/karakter/look/stemning til at give en god indlevelse og bedre oplevelse'. 
+                        </p>
+                        
+                        
+                        <br /><p>
+                        Det nyeste for mig nu er programmering. Frontend. Fed interface, dejligt UI/UX-design, sans for æstetik og funktionalitet. Det gør bare den digitale verden det bedre.
+                        </p>
+                        
 
-                        På vej mod mine drømme
+                        <br /><p>
+                        Omend jeg er selvstændig og har for det meste været selvkørende, så fungerer jeg bedst i samarbejde med et team. Når jeg har nogen at sparre med så bliver alt bare bedre.
+                        Jeg håber vi kan sparrer og samarbejde i den nærmeste fremtid
+                        </p>
+                        
+                        
 
-                        Jeg arbejder på at blive bedre til at slippe frygten for at stå alene med nye opgaver og ansvaret, der følger med. Jeg vil også gerne blive bedre til at bede om hjælp og til at bryde komplekse opgaver ned i overskuelige dele.
-
-                        Passion
-
-                        eg elsker at gøre ting mere interessante og give dem et ekstra lag – om det så er en film, et stykke content, et UI eller en lille detalje i et projekt. Det er netop det ekstra, der driver mig.
-
-                        Uddannelse
-
-                        Jeg har valgt uddannelsen som multimediedesigner, fordi jeg gerne vil arbejde med visuel produktion – hvad enten det er film, videoindhold, spil, UI eller XR (AR/VR).
-
-                        Faglige kompetencer
-
-                        Jeg kan lave grundlæggende websites – og lige lidt mere, så de bliver spændende og brugervenlige. Jeg har erfaring med videoredigering, compositing og optagelser. Jeg har arbejdet lidt i Unreal Engine og er i gang med at lære Blender bedre at kende. Jeg ser alle mine færdigheder som områder, jeg hele tiden kan udvikle og forbedre.
-
-                        Sammen kan vi rykke
-
-                        Jeg brænder for at gøre ting mere interessante – hvad enten det er en film, et interface, et website eller et enkelt visuelt element. At gøre noget intuitivt og æstetisk stærkt giver værdi, og det er den proces, der motiverer mig.
-                    </p>
+                       
+                    
 
                     <h4>Nok om det</h4>
                     <Link to="/#projects"> <h4 className="projekt-knap">Klik her for at se mine projekter</h4> </Link>

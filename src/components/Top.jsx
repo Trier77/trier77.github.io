@@ -20,7 +20,7 @@ export default function Top(){
                     
                 <div className="left-sect email-box">
                     <h2>Kontakt</h2>
-                    <h3>Skal vi snakke sammen</h3>
+                    <h3>Skal vi snakke sammen?</h3>
                     
                     <CopyEmailButton />
                 </div>
@@ -54,8 +54,9 @@ export default function Top(){
                 
 
                 <div className=" right-sect tools">
-                    <h2>Værktøj</h2>
-                    <p>Jeg har erfaring med masser Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus labore odit rerum neque obcaecati omnis assumenda quaerat nisi! Repellat assumenda placeat iure laudantium in! Reprehenderit saepe excepturi nostrum modi dolorem?</p>
+                    <h2>Hvad har jeg?</h2>
+                    <p>Jeg har erfaring inden for design og opbygning hjemmesider med frontend-programmering. Jeg har lavet små og lidt større videoproduktion i form af alt fra reels til filme, klippe og redigerer revyer. Jeg har arbejdet med komposition i form af Motion Graphics og VFX. Jeg er heller længere fremmede i den spændende verden iinden for animation og 3D.</p>
+                    <p>Jeg har en del programmer og redskaber i min værktøjskasse efterhånden. Jeg er frisk på så godt som alt inden for faget som multimediedesigner</p>
                 </div>
             </section>
         </article>
