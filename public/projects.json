@@ -70,12 +70,12 @@
 
 {
   "id": 8,
-  "title": "ZeroBuzz Brew",
+  "title": "Opslagsværk for HEMA Danmark",
   "year": 2024,
-  "description": "En salgs hjemmeside for et fiktiv brand, der sælger ikke-alkoholiske øl.",
+  "description": "En hjemmeside hvor man kan få svar på udstyr, klubber, stilarter og andet i forhold til HEMA.",
   "tags": ["HTML", "CSS", "Javascript"],
-  "video": "video/zerobuzz.mp4",
-  "links": [{"url": "", "text": "Hjemmesiden er desværre nede"}]
+  "video": "video/hema.mp4",
+  "links": [{"url": "https://www.resonsivewebdesign.imikkelsen.dk", "text": "Tjek HEMA Danmarks oplagsværk"}]
 },
 
 {
