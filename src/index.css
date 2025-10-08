@@ -524,13 +524,13 @@ h5{
   
 }
 
-@media (min-width: 425px) and (max-width:838){
+@media (min-width: 425px) and (max-width: 838px){
 
   
 
   .model-ramme {
     top: 7vh;
-    left: 60vw;
+    left: 7vw;
     height: 15vw;
     width: 15vw;}
 
@@ -539,10 +539,10 @@ h5{
 @media (min-width: 1440px){
 
   .model-ramme {
-    top: 6rem;
-    left: 43rem;
-    height: 10rem;
-    width: 10rem;}
+    top: 3rem;
+    left: 46rem;
+    height: 12rem;
+    width: 12rem;}
 
 
     .banner .slider {
